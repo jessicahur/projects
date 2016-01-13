@@ -22,11 +22,11 @@ UserList.prototype.save = function(obj){
   this.on('user-saved', function(obj){
     console.log("saved: " + obj.name + " (" + obj.id + ")");
   });
-}
+};
 
 UserList.prototype.all = function(){
   return database.users;
-}
+};
 
 var input = {name: 'Jessica Hur', occupation: 'developer'};
 users.save(input);
